@@ -12,3 +12,9 @@ class Solution:
             x=x//10
         if org==rev:
             return True
+
+"""Optimized code :
+#class Solution:
+#   def isPalindrome(self, x: int) -> bool:
+        # Convert integer to string and compare with its reverse
+#       return str(x) == str(x)[::-1] """
