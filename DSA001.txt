@@ -1,0 +1,21 @@
+DSA Leetcode problems:
+1.Palindrome number 
+Python3 code :
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        if x<0 :
+            return False
+
+        rev=0
+        org=x
+        while x>0:
+            digit=x%10
+            rev=rev*10+digit
+            x=x//10
+        if org==rev:
+            return True
+Optimized code :
+class Solution:
+    def isPalindrome(self, x: int) -> bool:
+        # Convert integer to string and compare with its reverse
+        return str(x) == str(x)[::-1]
